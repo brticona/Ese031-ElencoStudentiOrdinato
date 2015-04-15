@@ -2,25 +2,67 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Definisci le costanti
+#define N 3
+#define MAX_STRLEN 30
 
-// Definisci il tipo di dato struct s_studente
+struct s_studente{
+    char nome[MAX_STRLEN];
+    char cognome[MAX_STRLEN];
+     int eta;
+    char classe[MAX_STRLEN];
+};
 
-// Definisci studente come struct s_studente
+typedef struct s_studente studente;
 
-// Dichiara il prototipo della funzione di ordinamento
-
+void Ordinamentopercognome(studente v[],int n);
 
 int main(int argc, char** argv) {
-    // Dichiara le variabili locali
+    int i;
+    studente v[N];
     
-    // Codice per l'inserimento, da parte dell'utente, dei dati
+    for(i=0;i<N;i++)
+    {
+        printf("inserisci il nome: ");
+        scanf("%s", v[i].nome);
+        printf("inserisci il cognome: ");
+        scanf("%s", v[i].cognome);
+        printf("inserisci l'eta': ");
+        scanf("%d", &v[i].eta);
+        printf("inserisci la classe: ");
+        scanf("%s", v[i].classe);
+       
+    }
     
-    // Ordina l'elenco (con funzione)
+        Ordinamentopercognome (v,N);
     
-    // Codice per la stampa dei dati (uno studente per riga)
+    for(i=0;i<N;i++)
+    {
+      printf("%s; %s; %d; %s\n",v[i].nome,v[i].cognome,v[i].eta,v[i].classe);
+    }
     
     return (EXIT_SUCCESS);
 }
 
-// Definisci la funzione di ordinamento
+void Ordinamentopercognome(studente v[], int n)
+{
+    int i, j, min;
+    studente temp;
+    
+    for(i=0; i<n-1; i++)
+    {
+     min=i;
+        for(j=i+1; j<n; j++)
+        {
+            if(strcmp(v[j].cognome,v[min].cognome)<0)
+            {        
+                min=j;
+            }
+        
+            temp=v[i];
+            v[i]=v[min];
+            v[min]=temp;
+        }
+        
+    }
+    
+}

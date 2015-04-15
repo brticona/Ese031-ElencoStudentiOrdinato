@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=ese031-elencostudentiordinato
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/ese031-elencostudentiordinato
+CND_ARTIFACT_NAME_Debug=ese031
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/ese031
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=ese031-elencostudentiordinato.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/ese031-elencostudentiordinato.tar
+CND_PACKAGE_NAME_Debug=ese031.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/ese031.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=ese031-elencostudentiordinato
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/ese031-elencostudentiordinato
+CND_ARTIFACT_NAME_Release=ese031
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/ese031
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=ese031-elencostudentiordinato.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/ese031-elencostudentiordinato.tar
+CND_PACKAGE_NAME_Release=ese031.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/ese031.tar
 #
 # include compiler specific variables
 #
